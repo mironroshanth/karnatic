@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+    <title>Western to Letter Notation Converter</title>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    background: url('https://img.goodfon.com/original/1440x900/b/b6/music-musical-instrument-guitar-two-dark-background.jpg');
+    
+}
+button{
+    color: white;
+    background: linear-gradient(45deg, #3ccb11, #000000);
+    text-decoration : none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.container {
+            width: 250px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            align-items: center;
+            justify-content: center;
+        }
+</style>
+<body><br><br><div class=container>
+    <h2>Western to Letter Notation Converter</h2>
+    <form>
+    <img src="data:image/png;base64,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" width="250px">
+        <label for="western-notation">Enter Western Notation:</label>
+        <select id="western-notation" name="western-notation">
+        <option>C</option>
+  		<option>C#</option>
+  		<option>Db</option>
+        <option>D</option>
+        <option>D#</option>
+        <option>Eb</option>
+        <option>E</option>
+        <option>F</option>
+        <option>F#</option>
+        <option>Gb</option>
+        <option>G</option>
+        <option>G#</option>
+        <option>Ab</option>
+        <option>A</option>
+        <option>A#</option>
+        <option>Bb</option>
+        <option>B</option>
+		</select>
+        <br><br>
+        <button type="button" onclick="convert()">Convert</button>
+    
+    <p id="letter-notation"></p></form></div>
+
+    <script>
+        function convert() {
+            const westernNotation = document.getElementById("western-notation").value;
+            let letterNotation = "";
+
+            // Simple conversion logic (you can improve this)
+            for (let i = 0; i < westernNotation.length; i++) {
+                const note = westernNotation[i];
+                switch (note) {
+                    case "C":
+                        letterNotation += "ஸ-ஸட்ஜம் ";
+                        break;
+                    case "C#":
+                        letterNotation += "ரி1-சுத்த ரிஷபம் ";
+                        break;
+                     case "Db":
+                        letterNotation += "ரி1-ுத்த ரிஷபம் ";
+                        break;   
+                     case "D":
+                        letterNotation += "ரி2-சதுஸ்ருதி ரிஷபம் ";
+                        break;
+                     case "D#":
+                        letterNotation += "க1-சுத்த காந்தாரம்";
+                        break;   
+                    case "Eb":
+                        letterNotation += "க1-சுத்த காந்தாரம்";
+                        break;
+                        case "E":
+                        letterNotation += "க2-அந்தர காந்தாரம்";
+                        break;
+                    case "F":
+                        letterNotation += "ம1-சுத்த மத்திமம் ";
+                        break;
+                    case "F#":
+                        letterNotation += "ம2-பிரதி மத்திமம்";
+                        break;
+                     case "Gb":
+                        letterNotation += "ம2-பிரதி மத்திமம்";
+                        break;
+                        case "G":
+                        letterNotation += "ப-பஞ்சமம் ";
+                        break;
+                     case "G#":
+                        letterNotation += "த1-சுத்த தைவதம்";
+                        break;
+                        case "Ab":
+                        letterNotation += "த1-சுத்த தைவதம்";
+                        break;
+                     case "A":
+                        letterNotation += "த2-சதுஸ்ருதி தைவதம்";
+                        break;
+                        case "A#":
+                        letterNotation += "நி1-கைசிகி நிஷாதம்";
+                        break;
+                     case "Bb":
+                        letterNotation += "நி1-கைசிகி நிஷாதம்";
+                        break;
+                        case "B":
+                        letterNotation += "நி2-காகலி நிஷாதம் ";
+                        break;
+                     
+                    // ... Add more cases for other notes
+                }
+            }
+
+            document.getElementById("letter-notation").textContent = letterNotation;
+        }
+    </script>
+</body>
+</html>
